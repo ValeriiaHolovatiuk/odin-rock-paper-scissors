@@ -24,10 +24,14 @@ function playGame() {
     function playRound(humanChoice, computerChoice) {
         humanChoice = humanChoice.toLowerCase();
 
-        if (humanChoice === "rock" && computerChoice === "rock" || humanChoice === "paper" && computerChoice === "paper" || humanChoice === "scissors" && computerChoice === "scissors") {
+        if (humanChoice === "rock" && computerChoice === "rock" || 
+            humanChoice === "paper" && computerChoice === "paper" || 
+            humanChoice === "scissors" && computerChoice === "scissors") {
             console.log("It's a draw! Your choice: " + humanChoice + " matches the computers: " + computerChoice + ".");
         }
-        else if (humanChoice === "rock" && computerChoice === "scissors" || humanChoice === "scissors" && computerChoice === "paper" || humanChoice === "paper" && computerChoice === "rock") {
+        else if (humanChoice === "rock" && computerChoice === "scissors" || 
+            humanChoice === "scissors" && computerChoice === "paper" || 
+            humanChoice === "paper" && computerChoice === "rock") {
             humanScore++;
             console.log("You win! " + humanChoice + " beats " + computerChoice + ".");
         }
