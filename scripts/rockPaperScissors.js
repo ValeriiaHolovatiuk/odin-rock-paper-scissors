@@ -41,11 +41,13 @@ function playGame() {
         }
     }
 
-    for(let i = 1; i <= 5; i++){
+    /*for(let i = 1; i <= 5; i++){
         console.log("Round " + i + "!");
 
         playRound(getHumanChoice(), getComputerChoice());
-    }
+    }*/
+
+    playRound(getHumanChoice(), getComputerChoice());
 
     console.log("Total scores: You - " + humanScore + "; Computer - " + computerScrore);
     if(humanScore > computerScrore){
