@@ -1,10 +1,24 @@
-button{
+body {
+    background-color: #243447;
+}
+
+h1 {
+    color: #E0E0E0;
+}
+
+.choiceButton {
     border-radius: 50%;
     border: 5px solid #691656;
     padding: 0;
+
+    max-width: 100px;
+    max-height: 100px;
 }
 
-img{
+img {
     display: flex;
     align-items: center;
+
+    max-width: 90px;
+    max-height: 90px;
 }
