@@ -1,15 +1,26 @@
-async function playGame() {
-    /*for(let i = 1; i <= 5; i++){
-        console.log("Round " + i + "!");
+function playGame() {
+    let menu = document.querySelector('#gameButtons');
 
-        playRound(getHumanChoice(), getComputerChoice());
-    }*/
+    menu.addEventListener('click', (event) => {
+        let target = event.target.closest('button');
 
-    const humanChoice = await getHumanChoice();
+        switch (target.id) {
+            case 'rock':
+                console.log("You clicked rock");
+                playRound("rock", getComputerChoice());
+                break;
+            case 'paper':
+                console.log("You clicked paper");
+                playRound("paper", getComputerChoice());
+                break;
+            case 'scissors':
+                console.log("You clicked scissors");
+                playRound("scissors", getComputerChoice());
+                break;
+        }
+    })
 
-    playRound(humanChoice, getComputerChoice());
-
-    console.log("Total scores: You - " + humanScore + "; Computer - " + computerScrore);
+    /*console.log("Total scores: You - " + humanScore + "; Computer - " + computerScrore);
     if (humanScore > computerScrore) {
         console.log("You won the game!");
     }
@@ -18,7 +29,7 @@ async function playGame() {
     }
     else {
         console.log("Computer won!");
-    }
+    }*/
 }
 
 function getComputerChoice() {
@@ -35,34 +46,7 @@ function getComputerChoice() {
     }
 }
 
-function getHumanChoice() {
-    /*let humanChoice = prompt("What's your choice? Enter rock, paper, or scissors: ");
-    return humanChoice;*/
-
-    let menu = document.querySelector('#gameButtons');
-
-    menu.addEventListener('click', (event) => {
-        let target = event.target;
-        let humanChoice = "";
-
-        switch (target.id) {
-            case 'rock':
-                humanChoice = "rock";
-                console.log("Human choice: " + humanChoice);
-                return humanChoice;
-            case 'paper':
-                humanChoice = "paper";
-                console.log("Human choice: " + humanChoice);
-                return humanChoice;
-            case 'rock':
-                humanChoice = "scissors";
-                console.log("Human choice: " + humanChoice);
-                return humanChoice;
-        }
-    })
-}
-
-//let humanScore = 0, computerScrore = 0;
+let humanScore = 0, computerScrore = 0;
 
 function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase();
@@ -82,6 +66,8 @@ function playRound(humanChoice, computerChoice) {
         computerScrore++;
         console.log("You lose! " + computerChoice + " beats " + humanChoice + ".");
     }
+
+    // scores and updating them in UI to be done in this function
 }
 
 document.getElementById("start").addEventListener('click', function () {
