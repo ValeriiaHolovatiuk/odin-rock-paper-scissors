@@ -83,7 +83,7 @@ document.getElementById("start").addEventListener('click', function () {
         For the game logic I also need to add the following: End Game button, Reset Game button, and the logic around them
 
         Logic around End Game button:
-         - removes all extra text - the only text left is total score;
+         - removes all extra text - the only text left is total score + total rounds played (it requires extra logic added);
          - Start Game button is displayed again;
 
         Logic around Reset Game button:
