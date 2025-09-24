@@ -6,6 +6,15 @@ h1 {
     color: #E0E0E0;
 }
 
+.text {
+    color: #E0E0E0;
+    font-size: 20px;
+}
+
+.inactive{
+    display: none;
+}
+
 .choiceButton {
     border-radius: 50%;
     border: 5px solid #691656;
