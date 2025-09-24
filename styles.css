@@ -1,5 +1,26 @@
+/* 
+    For the styling/UI:
+     - need to add fonts + weights;
+     - center blocks, etc. to make sure they look good on the screen;
+     - add shadows/color change for buttons on hovering;
+     - add support for smaller/mobile devices;
+*/
+
 body {
     background-color: #243447;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#start {
+    background-color: #3B556E;
+    color: #E0E0E0;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+    border: 0;
 }
 
 h1 {
@@ -11,7 +32,7 @@ h1 {
     font-size: 20px;
 }
 
-.inactive{
+.inactive {
     display: none;
 }
 

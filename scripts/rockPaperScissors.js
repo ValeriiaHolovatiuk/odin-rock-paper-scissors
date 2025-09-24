@@ -70,6 +70,25 @@ document.getElementById("start").addEventListener('click', function () {
     document.getElementById("gameStart").textContent = "Game Starts!";
     playGame();
 
-    const div = document.getElementById("results");
-    div.classList.remove("inactive");
+    const divResults = document.getElementById("results");
+    divResults.classList.remove("inactive");
+
+    const divGameButtons = document.getElementById("gameButtons");
+    divGameButtons.classList.remove("inactive");
+
+    const startButton = document.getElementById("start");
+    startButton.classList.add("inactive");
+
+    /* 
+        For the game logic I also need to add the following: End Game button, Reset Game button, and the logic around them
+
+        Logic around End Game button:
+         - removes all extra text - the only text left is total score;
+         - Start Game button is displayed again;
+
+        Logic around Reset Game button:
+         - all text is removed;
+         - visually it looks like as if Start Game button was just clicked;
+         - scores are set to 0;
+    */
 })
