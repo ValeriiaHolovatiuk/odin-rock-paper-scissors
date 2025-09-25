@@ -14,13 +14,24 @@ body {
     align-items: center;
 }
 
-#start {
-    background-color: #3B556E;
+.buttonStyle{
     color: #E0E0E0;
     border-radius: 8px;
     padding: 12px 24px;
     font-weight: 600;
     border: 0;
+}
+
+#startGameButton {
+    background-color: #4A6780;
+}
+
+#endGameButton {
+    background-color: #804A4A;
+}
+
+#resetGameButton{
+    background-color: #66747A;
 }
 
 h1 {
@@ -41,14 +52,14 @@ h1 {
     border: 5px solid #691656;
     padding: 0;
 
-    max-width: 100px;
-    max-height: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 img {
     display: flex;
     align-items: center;
 
-    max-width: 90px;
-    max-height: 90px;
+    width: 110px;
+    height: 110px;
 }
