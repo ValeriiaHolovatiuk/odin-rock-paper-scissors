@@ -12,9 +12,11 @@
     <h1>Welcome to the Rock-Paper-Scissors game!</h1>
 
     <div id="gameButtons" class="inactive">
-        <button id="rock" class="choiceButton"><img src="./images/rock.png"></button>
-        <button id="paper" class="choiceButton"><img src="./images/paper.png"></button>
-        <button id="scissors" class="choiceButton"><img src="./images/scissors.png"></button>
+        <div class="gameButtonsClass">
+            <button id="rock" class="choiceButton"><img src="./images/rock.png"></button>
+            <button id="paper" class="choiceButton"><img src="./images/paper.png"></button>
+            <button id="scissors" class="choiceButton"><img src="./images/scissors.png"></button>
+        </div>
     </div>
 
     <p class="text"><span id="gameStart"></span></p>
@@ -39,6 +41,8 @@
         <button id="endGameButton" class="buttonStyle">End Game</button>
         <button id="resetGameButton" class="buttonStyle">Reset Game</button>
     </div>
+
+    <p class="text">Icons designed by <a href="http://www.freepik.com/">Freepik</a></p>
 
     <script src="./scripts/variables.js"></script>
     <script src="./scripts/helperFunctions.js"></script>
