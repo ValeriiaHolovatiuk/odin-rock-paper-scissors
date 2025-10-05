@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <h1>Welcome to the Rock-Paper-Scissors game!</h1>
+    <h1><a class="tracked">Welcome to the Rock-Paper-Scissors game!</a></h1>
 
     <div id="homeScreenText">
         <p class="text"><span id="gameResetText"></span>To start new game, click the button below.</p>
@@ -43,11 +43,14 @@
     </div>
 
     <!-- Control buttons: Start Game, End Game, Reset Game, Home -->
-    <button id="startGameButton" class="buttonStyle">Start game</button>
+    <div id="startHomeButtons">
+        <button id="startGameButton" class="buttonStyle">Start game</button>
+        <button id="homeButton" class="inactive tracked buttonStyle">Home</button>
+    </div>
 
     <div class="inactive" id="gameStateButtons">
         <button id="endGameButton" class="buttonStyle">End Game</button>
-        <button id="resetGameButton" class="buttonStyle">Reset Game</button>
+        <button id="resetGameButton" class="tracked buttonStyle">Reset Game</button>
     </div>
 
     <!-- Attribution -->
@@ -59,7 +62,7 @@
     <script src="./scripts/startGameListener.js"></script>
     <script src="./scripts/choiceButtonsListener.js"></script>
     <script src="./scripts/endGameListener.js"></script>
-    <script src="./scripts/resetGameListener.js"></script>
+    <script src="./scripts/resetGameHomeListener.js"></script>
     <script src="./scripts/rockPaperScissors.js"></script>
 </body>
 

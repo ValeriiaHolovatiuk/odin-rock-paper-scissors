@@ -1,7 +1,7 @@
 // End Game button is clicked
 document.getElementById("endGameButton").addEventListener('click', function () {
     AddCSSClass("inactive", divResults, divGameButtons, endResetButtons);
-    RemoveCSSClass("inactive", divEndGameResults, startButton);
+    RemoveCSSClass("inactive", divEndGameResults, startButton, homeButton);
 
     UpdateElements({ totalRounds: totalRounds, humanScoreEnd: humanScore, computerScoreEnd: computerScore, gameStart: "" });
 
