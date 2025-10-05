@@ -14,6 +14,15 @@ body {
     align-items: center;
 }
 
+h1 {
+    color: #E0E0E0;
+}
+
+a{
+    text-decoration: none;
+    color: #E0E0E0;
+}
+
 .buttonStyle {
     color: #E0E0E0;
     border-radius: 8px;
@@ -32,10 +41,6 @@ body {
 
 #resetGameButton {
     background-color: #66747A;
-}
-
-h1 {
-    color: #E0E0E0;
 }
 
 .text {
