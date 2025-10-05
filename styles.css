@@ -6,21 +6,63 @@
      - add support for smaller/mobile devices;
 */
 
+@font-face {
+    font-family: "Raleway";
+    src: url(./fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url(./fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url(./fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(./fonts/Lato-Regular.ttf);
+}
+
 body {
     background-color: #243447;
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 16px;
 }
 
 h1 {
-    color: #E0E0E0;
+    font-family: "Raleway";
+    color: #F5F5F5;
+    font-weight: 600;
+    font-size: 30px;
 }
 
-a{
+p,
+h1 {
+    margin-bottom: 0;
+
+}
+
+button {
+    font-family: "Lato-Light";
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+a {
     text-decoration: none;
     color: #E0E0E0;
+    cursor: pointer;
 }
 
 .buttonStyle {
@@ -41,6 +83,10 @@ a{
 
 #resetGameButton {
     background-color: #66747A;
+}
+
+#homeButton {
+    background-color: #3B556E;
 }
 
 .text {
