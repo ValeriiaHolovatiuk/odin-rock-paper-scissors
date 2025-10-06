@@ -5,8 +5,8 @@ document.getElementById("startGameButton").addEventListener('click', function ()
     [humanScore, computerScore, totalRounds] = ResetValues(humanScore, computerScore, totalRounds);
 
     UpdateElements({
-        humanChoice: "-", computerChoice: "-", roundResults: "", humanScoreTotal: humanScore, computerScoreTotal: computerScore, gameStart: "Game Starts!"
+        humanChoice: "-", computerChoice: "-", roundResultsText: "", humanScoreTotal: humanScore, computerScoreTotal: computerScore, gameStart: "Game Starts!"
     });
 
-    RemoveCSSClass("inactive", divResults, divGameButtons, endResetButtons);
+    RemoveCSSClass("inactive", divResults, divGameButtons, endResetButtons, pGameStartText);
 })

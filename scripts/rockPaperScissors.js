@@ -15,7 +15,8 @@ function getComputerChoice() {
 function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase();
 
-    AddCSSClass("inactive", pGameStart);
+    AddCSSClass("inactive", pGameStartText);
+    RemoveCSSClass("inactive", pRoundResults)
 
     UpdateElements({humanChoice: humanChoice, computerChoice: computerChoice});
 
@@ -25,7 +26,7 @@ function playRound(humanChoice, computerChoice) {
 
         totalRounds++;
 
-        UpdateElements({roundResults: "It's a draw! Your choice: " + humanChoice + " matches the computers: " + computerChoice + "."});
+        UpdateElements({roundResultsText: "It's a draw! Your choice: " + humanChoice + " matches the computers: " + computerChoice + "."});
     }
     else if (humanChoice === "rock" && computerChoice === "scissors" ||
         humanChoice === "scissors" && computerChoice === "paper" ||
@@ -33,13 +34,13 @@ function playRound(humanChoice, computerChoice) {
         humanScore++;
         totalRounds++;
 
-        UpdateElements({roundResults: "You win! " + humanChoice + " beats " + computerChoice + "."});
+        UpdateElements({roundResultsText: "You win! " + humanChoice + " beats " + computerChoice + "."});
     }
     else {
         computerScore++;
         totalRounds++;
 
-        UpdateElements({roundResults: "You lose! " + computerChoice + " beats " + humanChoice + "."});
+        UpdateElements({roundResultsText: "You lose! " + computerChoice + " beats " + humanChoice + "."});
     }
 
     UpdateElements({humanScoreTotal: humanScore, computerScoreTotal: computerScore});

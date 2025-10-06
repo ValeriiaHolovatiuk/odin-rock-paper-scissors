@@ -3,7 +3,7 @@ const resetGameElements = document.querySelectorAll('.tracked');
 resetGameElements.forEach(item => {
     item.addEventListener('click', function () {
 
-        AddCSSClass("inactive", divGameButtons, divResults, pGameStart, divEndGameResults, endResetButtons, homeButton);
+        AddCSSClass("inactive", divGameButtons, divResults, divEndGameResults, endResetButtons, homeButton, pGameStartText, pRoundResults);
 
         [humanScore, computerScore, totalRounds] = ResetValues(humanScore, computerScore, totalRounds);
         UpdateElements({ totalRounds: totalRounds, humanScoreEnd: humanScore, computerScoreEnd: computerScore, gameStart: "", gameResetText: ""});

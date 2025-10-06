@@ -10,5 +10,7 @@ const pGameStart = document.getElementById("gameStart");
 const pGameReset = document.getElementById("gameResetText");
 const divHomeScreenText = document.getElementById("homeScreenText");
 const homeButton = document.getElementById("homeButton");
+const pGameStartText = document.getElementById("gameStartText");
+const pRoundResults = document.getElementById("roundResults");
 
 let humanScore = 0, computerScore = 0, totalRounds = 0;

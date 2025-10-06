@@ -35,7 +35,6 @@ body {
 
     font-family: "Lato";
     font-weight: 400;
-    font-size: 16px;
 
     margin: 0;
     padding: 32px 64px;
@@ -94,8 +93,41 @@ img {
     background-color: #3B556E;
 }
 
-#attribution{
+#attribution {
     font-size: 12px;
+    padding-top: 24px;
+}
+
+#homeScreenText {
+    padding-bottom: 24px;
+}
+
+#gameStartText {
+    padding-bottom: 24px;
+}
+
+.startAndHomeButtons {
+    display: flex;
+    gap: 16px;
+}
+
+.endAndResetButtons {
+    display: flex;
+    gap: 16px;
+}
+
+.endGameResultsBlock{
+    padding: 24px 0;
+}
+
+.gameResults {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+
+    padding-bottom: 24px;
 }
 
 .buttonStyle {
@@ -108,7 +140,7 @@ img {
 
 .text {
     color: #E0E0E0;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .inactive {
@@ -120,6 +152,8 @@ img {
     justify-content: center;
     align-items: center;
     gap: 20px;
+
+    padding: 24px 0;
 }
 
 .choiceButton {

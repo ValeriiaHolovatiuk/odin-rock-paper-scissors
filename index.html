@@ -25,30 +25,30 @@
     </div>
 
     <!-- Displays information during game -->
-    <p class="text"><span id="gameStart"></span></p>
+    <p class="inactive text" id="gameStartText"><span id="gameStart"></span></p>
 
-    <div id="results" class="inactive">
+    <div id="results" class="inactive gameResults">
         <p class="text">Your choice: <span id="humanChoice">-</span></p>
         <p class="text">Computer's choice: <span id="computerChoice">-</span></p>
-        <p class="text"><span id="roundResults"></span></p>
+        <p class="text inactive" id="roundResults"><span id="roundResultsText"></span></p>
         <p class="text">Total scores: You - <span id="humanScoreTotal">0</span>; Computer - <span
                 id="computerScoreTotal">0</span>;</p>
     </div>
 
     <!-- Displays information when the game is finished -->
-    <div id="endGameResults" class="inactive">
+    <div id="endGameResults" class="inactive endGameResultsBlock">
         <p class="text">Total rounds played: <span id="totalRounds"></span></p>
         <p class="text">Score: <span id="humanScoreEnd">0</span> - <span id="computerScoreEnd">0</span></p>
         <p class="text"><span id="allRoundsWinner"></span></p>
     </div>
 
     <!-- Control buttons: Start Game, End Game, Reset Game, Home -->
-    <div id="startHomeButtons">
+    <div id="startHomeButtons" class="startAndHomeButtons">
         <button id="startGameButton" class="buttonStyle">Start game</button>
         <button id="homeButton" class="inactive tracked buttonStyle">Home</button>
     </div>
 
-    <div class="inactive" id="gameStateButtons">
+    <div class="inactive endAndResetButtons" id="gameStateButtons">
         <button id="endGameButton" class="buttonStyle">End Game</button>
         <button id="resetGameButton" class="tracked buttonStyle">Reset Game</button>
     </div>
