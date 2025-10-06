@@ -36,6 +36,11 @@ body {
     font-family: "Lato";
     font-weight: 400;
     font-size: 16px;
+
+    margin: 0;
+    padding: 32px 64px;
+
+    -webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -43,12 +48,13 @@ h1 {
     color: #F5F5F5;
     font-weight: 600;
     font-size: 30px;
+
+    padding-bottom: 20px;
 }
 
 p,
 h1 {
-    margin-bottom: 0;
-
+    margin: 0;
 }
 
 button {
@@ -65,12 +71,11 @@ a {
     cursor: pointer;
 }
 
-.buttonStyle {
-    color: #E0E0E0;
-    border-radius: 8px;
-    padding: 12px 24px;
-    font-weight: 600;
-    border: 0;
+img {
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
 }
 
 #startGameButton {
@@ -89,9 +94,21 @@ a {
     background-color: #3B556E;
 }
 
+#attribution{
+    font-size: 12px;
+}
+
+.buttonStyle {
+    color: #E0E0E0;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+    border: 0;
+}
+
 .text {
     color: #E0E0E0;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .inactive {
@@ -116,11 +133,4 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-
-    object-fit: contain;
 }
