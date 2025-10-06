@@ -1,5 +1,11 @@
 menu.addEventListener('click', (event) => {
-    let target = event.target.closest('button');
+    const target = event.target.closest('button');
+    if (!target) return;
+
+    const buttons = menu.querySelectorAll('button');
+    buttons.forEach(btn => btn.classList.remove('active'));
+
+    target.classList.add('active');
 
     switch (target.id) {
         case 'rock':
@@ -12,4 +18,4 @@ menu.addEventListener('click', (event) => {
             playRound("scissors", getComputerChoice());
             break;
     }
-})
+});
