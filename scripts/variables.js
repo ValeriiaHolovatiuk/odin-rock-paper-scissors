@@ -12,5 +12,7 @@ const divHomeScreenText = document.getElementById("homeScreenText");
 const homeButton = document.getElementById("homeButton");
 const pGameStartText = document.getElementById("gameStartText");
 const pRoundResults = document.getElementById("roundResults");
+const resetGameElements = document.querySelectorAll('.tracked');
+const choiceButtons = document.querySelectorAll('.choiceButton');
 
 let humanScore = 0, computerScore = 0, totalRounds = 0;

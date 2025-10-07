@@ -20,3 +20,10 @@ function UpdateElements(values) {
         if (el) el.textContent = value;
     }
 }
+
+function UpdateElementsColor(values) {
+    for (const [id, value] of Object.entries(values)) {
+        const el = document.getElementById(id);
+        if (el) el.style.color = value;
+    }
+}

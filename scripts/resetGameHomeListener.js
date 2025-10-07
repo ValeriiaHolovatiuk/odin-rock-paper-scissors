@@ -1,5 +1,3 @@
-const resetGameElements = document.querySelectorAll('.tracked');
-
 resetGameElements.forEach(item => {
     item.addEventListener('click', function () {
 
@@ -13,5 +11,11 @@ resetGameElements.forEach(item => {
         if (item.id === 'resetGameButton') {
             UpdateElements({ gameResetText: "Previous game was reset. " });
         }
+
+        choiceButtons.forEach(button => {
+            if(button.classList.contains('active')){
+                RemoveCSSClass("active", button);
+            }
+        });
     })
 })
