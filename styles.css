@@ -198,12 +198,15 @@ img {
         font-size: 28px;
     }
 
-    button{
+    button {
         font-size: 15px;
     }
 
     .text {
         font-size: 18px;
+        text-align: center;
+        word-wrap: break-word;
+        white-space: normal;
     }
 
     .choiceButton {
@@ -219,19 +222,24 @@ img {
 
     h1 {
         font-size: 20px;
+        text-align: center;
+        word-wrap: break-word;
+        white-space: normal;
     }
 
-    button{
+    button {
         font-size: 13px;
     }
 
     .text {
         font-size: 16px;
+        text-align: center;
+        word-wrap: break-word;
+        white-space: normal;
     }
 
     .choiceButton {
         height: 115px;
         width: 115px;
     }
-
 }
