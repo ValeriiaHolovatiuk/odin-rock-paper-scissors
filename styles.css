@@ -189,7 +189,7 @@ img {
     border: 5px solid #166929;
 }
 
-@media screen and (max-width: 1025px) and (min-width: 481px) {
+@media screen and (max-width: 1025px) and (min-width: 416px) {
     body {
         padding: 24px 32px;
     }
@@ -215,7 +215,7 @@ img {
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 415px) {
     body {
         padding: 16px;
     }
@@ -239,7 +239,7 @@ img {
     }
 
     .choiceButton {
-        height: 115px;
-        width: 115px;
+        height: 100px;
+        width: 100px;
     }
 }
