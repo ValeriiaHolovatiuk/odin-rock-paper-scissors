@@ -286,6 +286,7 @@ img {
 .userSection,
 .compSection {
     text-align: center;
+    width: 200px;
 }
 
 @media screen and (max-width: 1025px) and (min-width: 416px) {
