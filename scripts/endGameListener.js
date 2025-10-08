@@ -3,7 +3,7 @@ document.getElementById("endGameButton").addEventListener('click', function () {
     AddCSSClass("inactive", divResults, divGameButtons, endResetButtons, pGameStartText);
     RemoveCSSClass("inactive", divEndGameResults, startButton, homeButton);
 
-    UpdateElements({ totalRounds: totalRounds, humanScoreEnd: humanScore, computerScoreEnd: computerScore, gameStart: "" });
+    UpdateElements({ totalRounds: totalRounds, humanScoreEnd: humanScore, computerScoreEnd: computerScore, gameStart: "", roundNumber: 0 });
 
     if (computerScore > humanScore) {
         UpdateElements({ allRoundsWinner: "All rounds winner is Computer!" });

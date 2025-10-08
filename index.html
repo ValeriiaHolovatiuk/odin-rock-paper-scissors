@@ -29,11 +29,25 @@
     <p class="inactive text" id="gameStartText"><span id="gameStart"></span></p>
 
     <div id="results" class="inactive gameResults">
-        <p class="text">Your choice: <span id="humanChoice">-</span></p>
-        <p class="text">Computer's choice: <span id="computerChoice">-</span></p>
-        <p class="text inactive" id="roundResults"><span id="roundResultsText"></span></p>
-        <p class="text">Total scores: You - <span id="humanScoreTotal">0</span>; Computer - <span
-                id="computerScoreTotal">0</span>;</p>
+        <p class="text">SCOREBOARD</p>
+        <div class="scoreBoard">
+            <div class="userSection">
+                <p class="text">YOU</p>
+                <p class="text"><span id="humanChoice">-</span></p>
+                <p class="text scoreAnimation" id="humanScore"><span id="humanScoreTotal">0</span></p>
+            </div>
+
+            <div class="compSection">
+                <p class="text">COMP</p>
+                <p class="text"><span id="computerChoice">-</span></p>
+                <p class="text scoreAnimation" id="compScore"><span id="computerScoreTotal">0</span></p>
+            </div>
+        </div>
+        <div class="roundCountSection">
+            <p class="text">Round</p>
+            <p class="text roundCountAnimation" id="roundCount"><span id="roundNumber">0</span></p>
+        </div>
+        <p class="text inactive roundResultAnimation" id="roundResults"><span id="roundResultsText"></span></p>
     </div>
 
     <!-- Displays information when the game is finished -->

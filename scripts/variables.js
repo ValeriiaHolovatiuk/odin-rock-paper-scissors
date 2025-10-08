@@ -14,5 +14,6 @@ const pGameStartText = document.getElementById("gameStartText");
 const pRoundResults = document.getElementById("roundResults");
 const resetGameElements = document.querySelectorAll('.tracked');
 const choiceButtons = document.querySelectorAll('.choiceButton');
+const roundNumber = document.getElementById("roundNumber");
 
 let humanScore = 0, computerScore = 0, totalRounds = 0;

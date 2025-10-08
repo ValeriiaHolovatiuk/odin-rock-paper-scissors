@@ -4,7 +4,7 @@ resetGameElements.forEach(item => {
         AddCSSClass("inactive", divGameButtons, divResults, divEndGameResults, endResetButtons, homeButton, pGameStartText, pRoundResults);
 
         [humanScore, computerScore, totalRounds] = ResetValues(humanScore, computerScore, totalRounds);
-        UpdateElements({ totalRounds: totalRounds, humanScoreEnd: humanScore, computerScoreEnd: computerScore, gameStart: "", gameResetText: ""});
+        UpdateElements({ totalRounds: totalRounds, humanScoreEnd: humanScore, computerScoreEnd: computerScore, gameStart: "", gameResetText: "", roundNumber: totalRounds});
 
         RemoveCSSClass("inactive", startButton, divHomeScreenText);
 

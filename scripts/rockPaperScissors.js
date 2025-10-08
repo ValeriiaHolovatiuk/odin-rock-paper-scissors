@@ -35,29 +35,69 @@ function playRound(humanChoice, computerChoice) {
 
     UpdateElements({ humanChoice: humanChoice, computerChoice: computerChoice });
 
+    let elRoundResult = document.getElementById("roundResults");
+    let elRoundCount = document.getElementById("roundCount");
+
     if (humanChoice === "rock" && computerChoice === "rock" ||
         humanChoice === "paper" && computerChoice === "paper" ||
         humanChoice === "scissors" && computerChoice === "scissors") {
 
         totalRounds++;
 
-        UpdateElements({ roundResultsText: "It's a draw! Your choice: " + humanChoice + " matches the computers: " + computerChoice + "." });
-        UpdateElementsColor({ roundResultsText: "#B99B4A" })
+        RemoveCSSClass("roundResultAnimation", elRoundResult);
+        void elRoundResult.offsetWidth;
+        AddCSSClass("roundResultAnimation", elRoundResult);
+
+        RemoveCSSClass("roundCountAnimation", elRoundCount);
+        void elRoundCount.offsetWidth;
+        AddCSSClass("roundCountAnimation", elRoundCount);
+
+        UpdateElements({ roundResultsText: "It's a draw! Your choice: " + humanChoice + " matches the computers: " + computerChoice + ".", roundNumber: totalRounds });
+        UpdateElementsColor({ roundResultsText: "#B99B4A" });
     }
     else if (humanChoice === "rock" && computerChoice === "scissors" ||
         humanChoice === "scissors" && computerChoice === "paper" ||
         humanChoice === "paper" && computerChoice === "rock") {
+
+        let elScore = document.getElementById("humanScore");
+
+        RemoveCSSClass("scoreAnimation", elScore);
+        void elScore.offsetWidth;
+        AddCSSClass("scoreAnimation", elScore);
+
         humanScore++;
         totalRounds++;
 
-        UpdateElements({ roundResultsText: "You win! " + humanChoice + " beats " + computerChoice + "." });
-        UpdateElementsColor({ roundResultsText: "#338066" })
+        RemoveCSSClass("roundResultAnimation", elRoundResult);
+        void elRoundResult.offsetWidth;
+        AddCSSClass("roundResultAnimation", elRoundResult);
+
+        RemoveCSSClass("roundCountAnimation", elRoundCount);
+        void elRoundCount.offsetWidth;
+        AddCSSClass("roundCountAnimation", elRoundCount);
+
+        UpdateElements({ roundResultsText: "You win! " + humanChoice + " beats " + computerChoice + ".", roundNumber: totalRounds });
+        UpdateElementsColor({ roundResultsText: "#338066" });
     }
     else {
+        let elScore = document.getElementById("compScore");
+
+        RemoveCSSClass("scoreAnimation", elScore);
+        void elScore.offsetWidth;
+        AddCSSClass("scoreAnimation", elScore);
+
         computerScore++;
         totalRounds++;
 
-        UpdateElements({ roundResultsText: "You lose! " + computerChoice + " beats " + humanChoice + "." });
+        RemoveCSSClass("roundResultAnimation", elRoundResult);
+        void elRoundResult.offsetWidth;
+        AddCSSClass("roundResultAnimation", elRoundResult);
+
+        RemoveCSSClass("roundCountAnimation", elRoundCount);
+        void elRoundCount.offsetWidth;
+        AddCSSClass("roundCountAnimation", elRoundCount);
+
+        UpdateElements({ roundResultsText: "You lose! " + computerChoice + " beats " + humanChoice + ".", roundNumber: totalRounds });
         UpdateElementsColor({ roundResultsText: "#A84B50" })
     }
 
